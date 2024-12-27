@@ -1,3 +1,6 @@
+/*******************************
+* IMPORTS
+*******************************/
 /**
  * @name Discord+
  * @author PlusInsta
@@ -10,11 +13,37 @@
  * @source https://github.com/PlusInsta/discord-plus
  * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
  * @invite 2Jwh2nS
+ * I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server.
 */
 @import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
 
-/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
+/**
+ * @name hidePinDiscovery
+ * @author krystalskullofficial
+ * @version 2.0
+ * @description Hides the new pinned Discovery Icon
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
+/**
+ * @name Collapsable Sidebars
+ * @author rech
+ * @authorLink https://github.com/rechington
+ * @description Collapsable sidebars
+ * @license MIT
+ * @version 1.2
+ * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
+*/
+@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsable%20sidebars.css");
 
+/**
+ * @name HideNitroUpsellV2
+ * @author tom22k
+*/
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
+
+/*******************************
+* THEME
+*******************************/
 .theme-dark {
 /* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
    To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
@@ -102,25 +131,6 @@ https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c1bdbd-8865-4727-abc
   --dplus-background-color-alpha: 0.5;
 }
 
-/* If you use light theme, you can give it unique settings that are separate from dark theme. */
-.theme-light {
-  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
-  
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
-  
-  --dplus-foreground-color-hue-base: 210;
-  --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
-
-  --dplus-background-color-hue: 320;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.8;
-}
-
 :root {
 /* Fonts */
 /* You can use any installed font on your device. */
@@ -154,8 +164,11 @@ Set avatar/server radius to 50% to make them circular.
 /* --dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
 --dplus-icon-home-dark: url(https://trendygwentleman.com/static/img/c/70025.png); */
 --dplus-icon-home-dark: url(https://trendygwentleman.com/static/img/avatars/40122.jpg);
---dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
 }
+
+/******************************
+* CODE SNIPPETS
+******************************/
 
 /* Hides Store and Shop button */
 [href="/store"], 
@@ -188,28 +201,64 @@ div[aria-label="Forward"] {
     display: none;
 }
 
-/*
- * @name Collapsable Sidebars
- * @author rech
- * @authorLink https://github.com/rechington
- * @description Collapsable sidebars
- * @license MIT
- * @version 1.2
- * @invite
- * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
- * https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsable%20sidebars.css
- * @donate
+/*  Hide Nitro ad in profile
+*     i am me
 */
-/* Hide left sidebar */
-div[class^=base] > div[class^=content] > div[class^=sidebar] {
-    transition: width 0.2s cubic-bezier(1, 0, 0, 1.275);
-    width: 48px!important;
+[class^=wrapper_][class*=fullSize_]>button,
+[data-list-id^=profile-]>[class]:not([data-list-item-id$=_edit-profile]) {
+  display: none;
 }
-/* Show left sidebar when hovered */
-div[class^=base] > div[class^=content] > div[class^=sidebar]:hover {
-    width: 240px!important;
+
+/* Favorites Reverter
+*   charmfvlz
+*   removes bg color and star is on the left
+*/
+[class*='gifFavoriteButton_'] {
+    background-color: transparent;
 }
-/* Show left sidebar when server list is hovered */
-[aria-label="Servers sidebar"]:hover + div[class^=base] > div[class^=content] > div[class^=sidebar] {
-    width: 240px!important;
+[class*='result_'] [class*='favButton'] {
+    right: unset;
+}
+
+/**
+ *  Hide Message actions except on hover
+ *  obsidianninja11
+ *  Second section adds support for message sending
+*/
+
+[class^=buttonsInner_]:not(:hover)>:is(
+  [role=button]:not(:last-child), [class^=separator_]
+) {
+  display: none;
+}
+[class^=textArea_] {
+  margin-right: 24px;
+  +[class^=buttons_] {
+    position: absolute;
+    right: 0;
+    background-color: hsl(var(--primary-560-hsl) / 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+    &:not(:hover)>:not(:last-child) {
+      display: none;
+    }
+    /* Fix send message button*/
+    &:not(:hover)>[class^=separator_] {
+      margin-left: 0;
+      &::before { display: none; }
+      button>div { margin-left: 8px; }
+    }
+  }
+}
+
+/**
+* Red/Blue Pill      
+* @author: bitslayn
+* Makes channel have a slight color matching the notification type (ping/new forum post)
+*/
+[class^="iconVisibility_"]:has([class^="mentionsBadge_"]) > [class^="unread_"] {
+  background-color: var(--status-danger);
+}
+[class^="iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread_"] {
+  background-color: var(--text-brand);
 }
