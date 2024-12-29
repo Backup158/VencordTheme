@@ -1,5 +1,5 @@
 # What is This
-Uploaded so I can sorta sync my setup for dual booting. Setting up all the plugins every time is tedious when I have to update things every few years (and in case of data loss but shush). I have Discord on a vertical monitor and only use dark mode.
+Uploaded so I can sorta sync my [Vencord](https://github.com/Vendicated/Vencord) setup for dual booting. Setting up all the plugins every time is tedious when I have to update things every few years (and in case of data loss but shush). I have Discord on a vertical monitor and only use dark mode, so that's what the settings are tailored towards.
 
 # Vencord Theme
 Uses [Discord+](https://plusinsta.github.io/discord-plus/) by PlusInsta with some color/image choices.
