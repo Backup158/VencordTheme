@@ -16,7 +16,6 @@
  * I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server.
 */
 @import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
-
 /**
  * @name hidePinDiscovery
  * @author krystalskullofficial
@@ -34,12 +33,16 @@
  * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
 */
 @import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsable%20sidebars.css");
-
 /**
  * @name HideNitroUpsellV2
  * @author tom22k
 */
 @import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
+/**
+ * @name Seamless Chat Bar
+ * @author nspg911
+*/
+@import url("https://nspc911.github.io/vc-themes/SeamlessChatBar.theme.css");
 
 /*******************************
 * THEME
