@@ -32,7 +32,7 @@
  * @version 1.2
  * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
 */
-/* @import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsable%20sidebars.css"); */
+@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsable%20sidebars.css");
 
 /**
  * @name HideNitroUpsellV2
@@ -162,20 +162,7 @@ Set avatar/server radius to 50% to make them circular.
 /* The Home icon on the top left */
 /* --dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg);
 --dplus-icon-home-dark: url(https://trendygwentleman.com/static/img/c/70025.png); */
---dplus-icon-home-dark: url(https://trendygwentleman.com/static/img/avatars/40122.jpg);
-	
-}
-:root:has(#thread-context, #channel-context, #guild-context, #guild-browse-channels-context-menu, #audio-device-context, #user-settings-cog, #account),
-:root:has([class^="privateChannels"]):has(#user-context),
-:root:has(:is(.sidebar_a4d4d9, .guilds_a4d4d9):is(:hover, :focus-within)) {
-    --visiblechannellist-width: 240px;
-}
-:not([i]):not([i]):not([i]) .sidebar_a4d4d9 {
-    width: var(--visiblechannellist-width, 0) !important;
-    transition: width .5s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-.sidebar_a4d4d9 .container_ee69e0 {
-    width: 240px;
+--dplus-icon-home-dark: url(https://trendygwentleman.com/static/img/avatars/40122.jpg);	
 }
 
 /******************************
