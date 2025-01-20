@@ -261,3 +261,11 @@ div[aria-label="Forward"] {
 [class^="iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread_"] {
   background-color: var(--text-brand);
 }
+
+/**
+* Hide Muted and Ignored Users
+* @author: hahalosahalt
+*/
+[class*=dm_]:has([class*=muted_]) {
+    display: none;
+}
