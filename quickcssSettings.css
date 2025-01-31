@@ -23,7 +23,16 @@
  * @description Hides the new pinned Discovery Icon
 */
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
-
+/**
+ * @name Collapsible Sidebars
+ * @author rech
+ * @authorLink https://github.com/rechington
+ * @description Collapsible Sidebars
+ * @license MIT
+ * @version 1.2
+ * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
+*/
+@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsible_sidebars.css");
 /**
  * @name HideNitroUpsellV2
  * @author tom22k
