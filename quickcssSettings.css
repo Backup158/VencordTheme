@@ -279,18 +279,3 @@ div[class^=base] > div[class^=content] > div[class^=sidebar] {
 div[class^=base] > div[class^=content] > div[class^=sidebar]:hover {
     width: 240px!important;
 }
-/* Show left sidebar when server list is hovered */
-[aria-label="Servers sidebar"]:hover + div[class^=base] > div[class^=content] > div[class^=sidebar] {
-    width: 240px!important;
-}
-
-/* Member List Hover */
-[class^=membersWrap] {
-  min-width: 0;
-  >[class^=members_] {
-    transition: width 0.25s ease;
-    &:not(:hover) {
-      width:60px;
-    }
-  }
-}
