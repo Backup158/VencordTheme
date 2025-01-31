@@ -23,19 +23,6 @@
  * @description Hides the new pinned Discovery Icon
 */
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
-/**
- * @name Collapsible Sidebars
- * @author rech
- * @authorLink https://github.com/rechington
- * @description Collapsible Sidebars
- * @license MIT
- * @version 1.2
- * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
-*/
-/*
-@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsible_sidebars.css");
-*/
-@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/refs/heads/main/collapsible_sidebars.css");
 
 /**
  * @name HideNitroUpsellV2
@@ -271,4 +258,39 @@ div[aria-label="Forward"] {
 */
 [class*=dm_]:has([class*=muted_]) {
     display: none;
+}
+
+/**
+ * @name Collapsible Sidebars
+ * @author rech
+ * @authorLink https://github.com/rechington
+ * @description Collapsible Sidebars
+ * @license MIT
+ * @version 1.2
+ * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
+ * Members collapse does not work with Discord+ 2025-01-31
+*/
+/* Hide left sidebar */
+div[class^=base] > div[class^=content] > div[class^=sidebar] {
+    transition: width 0.2s cubic-bezier(1, 0, 0, 1.275);
+    width: 48px!important;
+}
+/* Show left sidebar when hovered */
+div[class^=base] > div[class^=content] > div[class^=sidebar]:hover {
+    width: 240px!important;
+}
+/* Show left sidebar when server list is hovered */
+[aria-label="Servers sidebar"]:hover + div[class^=base] > div[class^=content] > div[class^=sidebar] {
+    width: 240px!important;
+}
+
+/* Member List Hover */
+[class^=membersWrap] {
+  min-width: 0;
+  >[class^=members_] {
+    transition: width 0.25s ease;
+    &:not(:hover) {
+      width:60px;
+    }
+  }
 }
