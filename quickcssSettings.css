@@ -260,22 +260,4 @@ div[aria-label="Forward"] {
     display: none;
 }
 
-/**
- * @name Collapsible Sidebars
- * @author rech
- * @authorLink https://github.com/rechington
- * @description Collapsible Sidebars
- * @license MIT
- * @version 1.2
- * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
- * Members collapse does not work with Discord+ 2025-01-31
-*/
-/* Hide left sidebar */
-div[class^=base] > div[class^=content] > div[class^=sidebar] {
-    transition: width 0.2s cubic-bezier(1, 0, 0, 1.275);
-    width: 48px!important;
-}
-/* Show left sidebar when hovered */
-div[class^=base] > div[class^=content] > div[class^=sidebar]:hover {
-    width: 240px!important;
-}
+
