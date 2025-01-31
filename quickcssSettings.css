@@ -129,6 +129,7 @@ https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c1bdbd-8865-4727-abc
   --dplus-background-color-alpha: 0.5;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Righteous&family=Kosugi&family=RocknRoll+One&family=Gothic+A1&family=Black+Han+Sans&family=PT+Sans+Caption&family=Russo+One&family=Palanquin+Dark&family=Raleway:wght@500&family=Commissioner&family=Alegreya+Sans:wght@700&family=Mitr&family=Lalezar&display=swap');
 :root {
 /* Fonts */
 /* You can use any installed font on your device. */
@@ -136,6 +137,9 @@ https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c1bdbd-8865-4727-abc
   --dplus-font-body: 'Roboto';
   /* --dplus-font-header: 'Righteous'; */
   --dplus-font-header: 'Dancing Script';
+
+  --font-display: var(--dplus-font-ui), 'Poppins', 'Helvetica Neue', 'system-ui', 'Tahoma', 'Segoe UI', 'Helvetica', 'Whitney', sans-serif !important;
+  --font-primary: var(--font-display);
 
 /* Round corner sizes, measured in pixel radius.
 Set avatar/server radius to 50% to make them circular.
@@ -194,7 +198,6 @@ button[aria-label="Open sticker picker"] {
 #message-actions-forward {
     display: none;
 }
-
 div[aria-label="Forward"] {
     display: none;
 }
