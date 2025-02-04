@@ -272,4 +272,14 @@ div[aria-label="Forward"] {
     display: none;
 }
 
+/**
+* Pin the page select to the bottom of search results
+* @author: suffocate
+*/
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
 
