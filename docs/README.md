@@ -6,14 +6,14 @@ Uses [Discord+](https://plusinsta.github.io/discord-plus/) by PlusInsta with som
 
 With additions from the Vencord community in #css-snippets. Mostly to hide things. 
 
-The QuickCSS file in this repo includes a bunch of backgrounds I've cycled through. Choose whichever one fits the mood.
+The Theme file in this repo includes a bunch of backgrounds I've cycled through. Choose whichever one fits the mood.
 
 # Plugins
 
-Json file includes the plugins and QuickCSS links.
+Json file includes plugin settings. Should also auto set the theme for you.
 
 # Usage
-THEME ONLY: Settings -> Vencord -> Themes -> Online Themes -> Type `@dark https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/main/quickcssSettings.css`
+THEME ONLY: Settings -> Vencord -> Themes -> Online Themes -> Type `@dark https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/main/DiscordPlusChunky.theme.css`
 
 THE WHOLE SHEBANG: Download the json file and import it by going into Settings -> Vencord -> Backup and Restore -> Import Settings
 
