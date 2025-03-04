@@ -31,7 +31,7 @@
  * @license MIT
  * @version 1.2
  * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
-
+*/
 @import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsible_sidebars.css");
 /**
  * @name HideNitroUpsellV2
@@ -116,22 +116,23 @@
   --dplus-backdrop: url(
 https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c1bdbd-8865-4727-abce-5e5e8cffac66/deac6v5-504b1c28-bcbf-4938-9d61-430873ef1465.jpg/v1/fill/w_1280,h_960,q_75,strp/witchcraft_by_babasik_deac6v5-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvOTFjMWJkYmQtODg2NS00NzI3LWFiY2UtNWU1ZThjZmZhYzY2XC9kZWFjNnY1LTUwNGIxYzI4LWJjYmYtNDkzOC05ZDYxLTQzMDg3M2VmMTQ2NS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.B6hVvgdFDia7DNf6DC_yEsABDbTXZKNkmhcvNldkC1Y  );
 
-/* Accent color, used to decorate the UI with colors. */
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
+  /* accent color is used for things like buttons */
+  --dplus-accent-color-hue: 320; /* hue in HSL */
+  --dplus-accent-color-saturation: 60%; /* saturation in HSL */
+  --dplus-accent-color-lightness: 31%; /* lightness in HSL */
 
-/* Foreground color: For things like text and icons. */
-  --dplus-foreground-color-hue-base: 210;
+  /* foreground color affects icons, text, and many other things in the UI */
+  --dplus-foreground-color-hue-base: 210; /* based on vanilla --text-normal hue */
   --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
+  --dplus-foreground-color-saturation-amount: 1; /* offset, where 1 is normal strength and 0.5 is -50 percentile, can go above 1 at risk of clipping */
+  --dplus-foreground-color-lightness-amount: 1; /* ditto, 1 is normal and 0.5 is -50 percentile, can go above 1 at risk of clipping */
 
-/* Background color: Covers the backdrop so the app is easier to read. */
+  /* background color affects the squares that darken the backdrop */
   --dplus-background-color-hue: 320;
   --dplus-background-color-saturation-amount: 1;
   --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.5;
+  --dplus-background-color-alpha: 0.8; /* how opaque the backgrounds should be, where 1 is fully opaque and 0 is fully transparent. not recommended to set to 0 unless background is very dark or black */
+  /* see help documentation on what will work with this variable: */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Righteous&family=Kosugi&family=RocknRoll+One&family=Gothic+A1&family=Black+Han+Sans&family=PT+Sans+Caption&family=Russo+One&family=Palanquin+Dark&family=Raleway:wght@500&family=Commissioner&family=Alegreya+Sans:wght@700&family=Mitr&family=Lalezar&display=swap');
