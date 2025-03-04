@@ -131,7 +131,7 @@ https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91c1bdbd-8865-4727-abc
   --dplus-background-color-hue: 320;
   --dplus-background-color-saturation-amount: 1;
   --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.8; /* how opaque the backgrounds should be, where 1 is fully opaque and 0 is fully transparent. not recommended to set to 0 unless background is very dark or black */
+  --dplus-background-color-alpha: 0.6; /* how opaque the backgrounds should be, where 1 is fully opaque and 0 is fully transparent. not recommended to set to 0 unless background is very dark or black */
   /* see help documentation on what will work with this variable: */
 }
 
