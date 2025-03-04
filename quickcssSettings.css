@@ -176,30 +176,30 @@ Set avatar/server radius to 50% to make them circular.
 /******************************
 * CODE SNIPPETS
 ******************************/
-
-/* Hides Store and Shop button */
+/*
+/* Hides Store and Shop button 
 [href="/store"], 
 [href='/shop']
 {
   display: none;
 }
 
-/* Hide Nitro Gift button */
+/* Hide Nitro Gift button 
 button[aria-label="Send a gift"] {
   display: none;
 }
 
-/* Hide sticker picker button */
+/* Hide sticker picker button 
 button[aria-label="Open sticker picker"] {
   display: none;
 }
 
-/* Hide app launcher */
+/* Hide app launcher 
 [class*=channelAppLauncher_] {
   display: none;
 }
 
-/* Hide forward button (only on hover) */
+/* Hide forward button (only on hover) 
 #message-actions-forward {
     display: none;
 }
@@ -209,7 +209,7 @@ div[aria-label="Forward"] {
 
 /*  Hide Nitro ad in profile
 *     i am me
-*/
+
 [class^=wrapper_][class*=fullSize_]>button,
 [data-list-id^=profile-]>[class]:not([data-list-item-id$=_edit-profile]) {
   display: none;
@@ -218,7 +218,7 @@ div[aria-label="Forward"] {
 /* Favorites Reverter
 *   charmfvlz
 *   removes bg color and star is on the left
-*/
+
 [class*='gifFavoriteButton_'] {
     background-color: transparent;
 }
@@ -230,7 +230,7 @@ div[aria-label="Forward"] {
  *  Hide Message actions except on hover
  *  obsidianninja11
  *  Second section adds support for message sending
-*/
+
 
 [class^=buttonsInner_]:not(:hover)>:is(
   [role=button]:not(:last-child), [class^=separator_]
@@ -248,7 +248,7 @@ div[aria-label="Forward"] {
     &:not(:hover)>:not(:last-child) {
       display: none;
     }
-    /* Fix send message button*/
+    /* Fix send message button
     &:not(:hover)>[class^=separator_] {
       margin-left: 0;
       &::before { display: none; }
