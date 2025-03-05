@@ -18,5 +18,6 @@ THEME ONLY: Settings -> Vencord -> Themes -> Online Themes -> Type `@dark https:
 THE WHOLE SHEBANG: Download the json file and import it by going into Settings -> Vencord -> Backup and Restore -> Import Settings
 
 # Example
-![vencord txt](https://github.com/user-attachments/assets/87a8d5e2-ad28-4716-83fd-7ae95d0b87de)
+![vencord txt](https://github.com/user-attachments/assets/08fa9ea1-d649-4c15-8ce8-4a7f16553150)
 
+![vencord channels uncollapsed](https://github.com/user-attachments/assets/ba198be9-0b3d-492c-b6a2-c3ddc2ad419f)
