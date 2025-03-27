@@ -24,15 +24,15 @@
 */
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
 /**
- * @name Collapsible Sidebars
+ * @name Collapsible Sidebars (Visual Refresh)
  * @author rech
  * @authorLink https://github.com/rechington
  * @description Collapsible Sidebars
  * @license MIT
  * @version 1.2
- * @source https://github.com/rechington/Discord-Mods/blob/main/collapsable%20sidebars.css
+ * @source https://github.com/rechington/Discord-Mods/blob/main/collapsible_sidebars_refresh.css
 */
-@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/main/collapsible_sidebars.css");
+@import url("https://raw.githubusercontent.com/rechington/Discord-Mods/refs/heads/main/collapsible_sidebars_refresh.css");
 /**
  * @name HideNitroUpsellV2
  * @author tom22k
