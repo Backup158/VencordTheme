@@ -245,7 +245,7 @@ div[aria-label="Forward"] {
  * @name Hide Message Actions Except on Hover
  * @author obsidianninja11
  * @description Second section adds support for message sending
-*/
+
 [class^=buttonsInner_]:not(:hover)>:is(
   [role=button]:not(:last-child), [class^=separator_]
 ) {
@@ -262,7 +262,7 @@ div[aria-label="Forward"] {
     &:not(:hover)>:not(:last-child) {
       display: none;
     }
-    /* Fix send message button*/
+    /* Fix send message button CLOSE_COMMENT_HERE
     &:not(:hover)>[class^=separator_] {
       margin-left: 0;
       &::before { display: none; }
@@ -270,6 +270,7 @@ div[aria-label="Forward"] {
     }
   }
 }
+*/
 
 /**
  * @name Red/Blue Pill      
