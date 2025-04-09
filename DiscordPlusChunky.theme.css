@@ -333,7 +333,7 @@ div[aria-label="Forward"] {
   position: relative;
 }
 .visual-refresh [class^="sidebar_"]:hover [class^="sidebarList_"] {
-  left: 70px;
+  left: 150px;	/* 70px --> 150px for better folders */
   opacity: 1;
   width: 240px;
 }
