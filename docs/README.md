@@ -21,6 +21,7 @@ THE WHOLE SHEBANG: Download the json file and import it by going into _Settings_
 
 # Example
 Blurred image is because of a plugin for NSFW channels.
+
 ![vencord txt2e](https://github.com/user-attachments/assets/e1e46b71-981b-4cc1-8e72-e8b351292d87)
 
 ![vencord-collapsible-channels-1e](https://github.com/user-attachments/assets/40d3f61e-6978-440d-8a75-9467b5106c98)
