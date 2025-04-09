@@ -244,37 +244,6 @@ div[aria-label="Forward"] {
 }
 
 /**
- * @name Hide Message Actions Except on Hover
- * @author obsidianninja11
- * @description Second section adds support for message sending
-
-[class^=buttonsInner_]:not(:hover)>:is(
-  [role=button]:not(:last-child), [class^=separator_]
-) {
-  display: none;
-}
-[class^=textArea_] {
-  margin-right: 24px;
-  +[class^=buttons_] {
-    position: absolute;
-    right: 0;
-    background-color: hsl(var(--primary-560-hsl) / 0.5);
-    backdrop-filter: blur(3px);
-    border-radius: 8px;
-    &:not(:hover)>:not(:last-child) {
-      display: none;
-    }
-    /* Fix send message button CLOSE_COMMENT_HERE
-    &:not(:hover)>[class^=separator_] {
-      margin-left: 0;
-      &::before { display: none; }
-      button>div { margin-left: 8px; }
-    }
-  }
-}
-*/
-
-/**
  * @name Red/Blue Pill      
  * @author bitslayn
  * @description Makes channel have a slight color matching the notification type (ping/new forum post)
@@ -333,7 +302,7 @@ div[aria-label="Forward"] {
   position: relative;
 }
 .visual-refresh [class^="sidebar_"]:hover [class^="sidebarList_"] {
-  left: 150px;	/* 70px --> 150px for better folders */
+  left: 150px;	/* 70px --> 150px to go past Better Folders */
   opacity: 1;
   width: 240px;
 }
@@ -360,7 +329,7 @@ div[aria-label="Forward"] {
 .visual-refresh [class^="container_"] [class^="membersWrap_"]::before {
   content: "";
   position: absolute;
-  width: 10px;
+  width: 10px; /* Hover detection is here */
   height: 100%;
   right: 100%;
   top: 0;
@@ -428,4 +397,13 @@ div[aria-label="Forward"] {
 /* Hide resize handle since we're controlling width with CSS */
 .visual-refresh [class^="sidebarResizeHandle_"] {
   display: none;
+}
+/* Makes Members List background smaller */
+.visual-refresh div[class^="container_c8ffbb"] {
+    max-width: 70px; /* Amount avatars peek +10px */
+}
+
+/* Remove Activity Members List */
+.visual-refresh div[aria-label*="Members"] > div > div[role="listitem"] {
+    display: none;
 }
