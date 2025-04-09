@@ -315,10 +315,10 @@ div[aria-label="Forward"] {
   right: -180px; /* -240px --> -180px to let the avatars peek */
   top: 0;
   filter: drop-shadow(-5px 0 8px rgba(0, 0, 0, 0.15));
-  transition: right 0.3s ease, opacity 0.3s ease;
+  transition: right 0.3s ease;
   background: var(--background-secondary);
   max-width: 240px;
-  will-change: opacity, right;
+  will-change: right;
 }
 .visual-refresh [class^="container_"] [class^="membersWrap_"]:hover,
 .visual-refresh [class^="container_"] [class^="membersWrap_"]:focus-within {
