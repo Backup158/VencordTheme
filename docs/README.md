@@ -25,4 +25,4 @@ THE WHOLE SHEBANG: Download the json file and import it by going into _Settings_
 ![vencord channels uncollapsed](https://github.com/user-attachments/assets/ba198be9-0b3d-492c-b6a2-c3ddc2ad419f)
 
 # Notes
-[Notes](notes.md) - [Notes on Pages](notes.html)
+[Link](notes.md) to theme development notes
