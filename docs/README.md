@@ -20,9 +20,12 @@ THEME ONLY: _Settings_ -> _Vencord_ -> _Themes_ -> _Online Themes_ -> Type `@dar
 THE WHOLE SHEBANG: Download the json file and import it by going into _Settings_ -> _Vencord_ -> _Backup and Restore_ -> _Import Settings_
 
 # Example
-![vencord txt](https://github.com/user-attachments/assets/08fa9ea1-d649-4c15-8ce8-4a7f16553150)
+Blurred image is because of a plugin for NSFW channels.
+![vencord txt2e](https://github.com/user-attachments/assets/e1e46b71-981b-4cc1-8e72-e8b351292d87)
 
-![vencord channels uncollapsed](https://github.com/user-attachments/assets/ba198be9-0b3d-492c-b6a2-c3ddc2ad419f)
+![vencord-collapsible-channels-1e](https://github.com/user-attachments/assets/40d3f61e-6978-440d-8a75-9467b5106c98)
+
+![vencord-collapsible-channels-2e](https://github.com/user-attachments/assets/4f224d7e-c1aa-4847-83f3-e6da434a7079)
 
 # Notes
 [Link](notes.md) to theme development notes
