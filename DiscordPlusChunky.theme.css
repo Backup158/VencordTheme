@@ -403,7 +403,15 @@ div[aria-label="Forward"] {
     max-width: 70px; /* Amount avatars peek +10px */
 }
 
-/* Remove Activity Members List */
+/* Remove Activity in Members List */
 .visual-refresh div[aria-label*="Members"] > div > div[role="listitem"] {
     display: none;
+}
+
+/**
+* @name Unblock bottom of server list
+* @description for use with collapsed nameplate
+*/
+.visual-refresh .wrapper_ef3116 {
+    margin-bottom : 0px!important;
 }
