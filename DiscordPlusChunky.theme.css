@@ -302,7 +302,7 @@ div[aria-label="Forward"] {
   position: relative;
 }
 .visual-refresh [class^="sidebar_"]:hover [class^="sidebarList_"] {
-  left: 150px;	/* 70px --> 150px to go past Better Folders */
+  left: 165px;	/* 70px --> 1650px to go past Better Folders */
   opacity: 1;
   width: 240px;
 }
