@@ -10,6 +10,8 @@ With additions from the Vencord community, generally taken from **#css-snippets*
 
 The [theme file in this repo](https://github.com/Backup158/VencordTheme/blob/main/DiscordPlusChunky.theme.css) includes a bunch of backgrounds I've cycled through. Choose whichever one fits the mood (or add your own).
 
+2025-06-06: Discord plus removed the home icon customization code
+
 # Plugins
 
 Plugin settings are included in the [Vencord settings backup file](https://github.com/Backup158/VencordTheme/blob/main/vencord-settings-backup.json) in this repo. Setting this will also automatically setup the theme for you.
