@@ -53,7 +53,7 @@
         https://i.imgur.com/8VOTvmQ.jpg
         https://i.imgur.com/mD1LX42.
 	*/
-  --dplus-backdrop: url(https://github.com/Backup158/VencordTheme/blob/main/Assets/Theme/Wallpapers/Yennefer_Noir.png);
+  --dplus-backdrop: url(https://i.imgur.com/XsCyikP.png);
 
   /* accent color is used for things like buttons */
   --dplus-accent-color-hue: 320; /* hue in HSL */
@@ -109,7 +109,7 @@
 
   /* The Home icon on the top left */
   /* --dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg); */
-  --dplus-icon-home-dark: url(https://github.com/Backup158/VencordTheme/blob/main/Assets/Theme/Icons/40122_Yennefer_Avatar.jpg);	
+  --dplus-icon-home-dark: url(https://i.imgur.com/4BB1lFP.png);	
 
   /* change padding of the bar */
   --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
