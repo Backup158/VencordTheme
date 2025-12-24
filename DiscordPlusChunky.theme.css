@@ -83,7 +83,7 @@
   --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
   --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
   --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
-  --channel-selected-bg: var(--main-color); /* selected channel background [default: var(--main-color)] */
+  --channel-selected-bg: var(--hover-color); /* selected channel background [default: var(--main-color)] */
   --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
   --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
   /* ACCESSIBILITY */
