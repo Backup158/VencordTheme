@@ -11,6 +11,32 @@
 @import url("https://clearvision.github.io/ClearVision-v7/main.css");
 @import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
 
+/**
+* @name Bartender
+* @author aushevahmad, ge.b
+* @description Hide Discord's toolbar icons until you need them. 
+* @version 1.0
+* @source https://github.com/AushevAhmad/awesome-css
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+:root {
+    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
+}
+/**
+* @name NSFW recolor
+* @author krystalskullofficial
+* @version 4.0
+* @description recolors the icon for 'NFSW' channels so they are easier to see/notice
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWChannelRecolor.css");
+/**
+* @name ShowBothUser&Status
+* @author  krystalskullofficial
+* @version 6.0
+* @description Show both your status and username at the same time
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css");
+
 /*******************************
 * THEME
 *******************************/
@@ -115,17 +141,6 @@
 * CODE SNIPPETS
 ******************************/
 /**
-* @name Bartender
-* @author aushevahmad, ge.b
-* @description Hide Discord's toolbar icons until you need them. 
-* @version 1.0
-* @source https://github.com/AushevAhmad/awesome-css
-*/
-@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
-:root {
-    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
-}
-/**
    * @name Hidden Threads
    * @author vortex_chaos, catpurrrchino
    * @version 2.0.0
@@ -142,17 +157,3 @@
     overflow: hidden;
     transition: max-height 0.25s ease;
 }
-/**
-* @name NSFW recolor
-* @author krystalskullofficial
-* @version 4.0
-* @description recolors the icon for 'NFSW' channels so they are easier to see/notice
-*/
-@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWChannelRecolor.css");
-/**
-* @name ShowBothUser&Status
-* @author  krystalskullofficial
-* @version 6.0
-* @description Show both your status and username at the same time
-*/
-@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css");
