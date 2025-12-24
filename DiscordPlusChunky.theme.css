@@ -36,6 +36,27 @@
 * @description Show both your status and username at the same time
 */
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css");
+/**
+ * @name hidePinDiscovery
+ * @author krystalskullofficial
+ * @version 2.0
+ * @description Hides the new pinned Discovery Icon
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
+/**
+ * @name SyncedWithGameRecolor
+ * @author KrstlSkll69
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
+/**
+ * @name Seamless Chat Bar (Visual Refresh)
+ * @author nspc911
+*/
+@import url(https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/RefreshedSeamlessChatBar.theme.css);
+/**
+ * @name Chat Alerts at Top
+*/
+@import url(https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/ChatRelatedAlertsAtTop.theme.css);
 
 /*******************************
 * THEME
@@ -156,4 +177,240 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.25s ease;
+}
+
+/**
+ * @name Hide Store and Shop
+ * @description Hides buttons for Store and Shop
+*/
+[href="/store"], 
+[href='/shop']
+{
+  display: none;
+}
+
+/**
+ * @name Hide Nitro Gift Button 
+*/
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+/**
+ * @name Hide Sticker Picker Button 
+*/
+button[aria-label="Open sticker picker"] {
+  display: none;
+}
+
+/**
+ * @name Hide App Launcher
+*/
+[class*=channelAppLauncher_] {
+  display: none;
+}
+
+/**
+ * @name Hide Forward Button 
+ * @description Hides forward button from appearing when hovering a message
+*/
+#message-actions-forward {
+    display: none;
+}
+div[aria-label="Forward"] {
+    display: none;
+}
+
+/**
+ * @name Hide Nitro Ad in Profile
+ * @author i am me
+*/
+[class^=wrapper_][class*=fullSize_]>button,
+[data-list-id^=profile-]>[class]:not([data-list-item-id$=_edit-profile]) {
+  display: none;
+}
+
+/**
+ * @name Favorites Reverter
+ * @author charmfvlz
+ * @description removes bg color and moves star back to the left
+*/
+[class*='gifFavoriteButton_'] {
+    background-color: transparent;
+}
+[class*='result_'] [class*='favButton'] {
+    right: unset;
+}
+
+/**
+ * @name Red/Blue Pill      
+ * @author bitslayn
+ * @description Makes channel have a slight color matching the notification type (ping/new forum post)
+*/
+[class*="-iconVisibility_"]:has([class^="mentionsBadge_"]) > [class^="unread"] {
+  background-color: var(--status-danger);
+}
+[class*="-iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread"] {
+  background-color: var(--text-brand);
+}
+
+/**
+ * @name Hide Muted and Ignored Users
+ * @author hahalosahalt
+ * @description Hides direct messages from muted users
+*/
+[class*=dm_]:has([class*=muted_]) {
+    display: none;
+}
+
+/**
+ * @name Pin Search Page Selector
+ * @author suffocate
+ * @description Pin the page select to the bottom of search results
+*/
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/**
+ * @name Collapsible-on-hover Sidebars (Visual Refresh)
+ * @author lu9
+ * @additional-authors minebabble
+ * @description Made with default UI density in mind
+*/
+/* Collapsible sidebars - Optimized for speed */
+/* Left sidebar - fixed with hover bridge */
+.visual-refresh [class*="-sidebarList"] {
+  position: fixed;
+  width: 150px;
+  container-type: unset;
+  opacity: 0;
+  height: 100%;
+  z-index: 998;
+  left: -70px;
+  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.15));
+  transition: opacity 0.3s ease, left 0.3s ease, width 0.3s ease;
+  will-change: opacity, left, width;
+}
+/* Server list (guild list) positioning */
+.visual-refresh [class*="guilds"] {
+  z-index: 999;
+  position: relative;
+}
+.visual-refresh [class*="-sidebar_"]:hover [class^="sidebarList"] {
+  left: 160px;	/* 70px --> 160px to go past Better Folders */
+  opacity: 1;
+  width: 240px;
+}
+/* Right member list that works in all window sizes */
+.visual-refresh [class*="-container_"] [class^="membersWrap"] {
+  position: absolute;
+  height: 100vh;
+  opacity: 1;
+  z-index: 999;
+  right: -180px; /* -240px --> -180px to let the avatars peek */
+  top: 0;
+  filter: drop-shadow(-5px 0 8px rgba(0, 0, 0, 0.15));
+  transition: right 0.3s ease;
+  background: var(--background-secondary);
+  max-width: 240px;
+  will-change: right;
+}
+.visual-refresh [class*="-container_"] [class^="membersWrap"]:hover,
+.visual-refresh [class*="-container_"] [class^="membersWrap"]:focus-within {
+  right: 0;
+  opacity: 1;
+}
+/* Hover detection area for right member list */
+.visual-refresh [class*="-container_"] [class^="membersWrap"]::before {
+  content: "";
+  position: absolute;
+  width: 10px; /* Hover detection is here */
+  height: 100%;
+  right: 100%;
+  top: 0;
+}
+/* Bottom panel with nameplate fix - IMPROVED */
+.visual-refresh [class*="-panels"] {
+  position: fixed;
+  width: 58px;
+  bottom: 20;
+  left: 31;
+  z-index: 999;
+  transition: width 0.3s ease;
+  background: var(--background-primary);
+  will-change: width;
+}
+.visual-refresh [class*="-panels"]:hover {
+  width: 260px; /* Increased width for more space */
+  z-index: 1000;
+}
+/* Improved nameplate layout and spacing */
+.visual-refresh [class*="-nameTag"],
+.visual-refresh [class*="-userInfo"] {
+  position: relative;
+  text-align: left;
+  width: auto;
+  padding-right: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+/* Ensure username text has proper spacing */
+.visual-refresh [class*="-panels_"] [class^="username"] {
+  margin-left: 8px;
+  padding-right: 5px;
+}
+/* Avatar alignment in nameplate */
+.visual-refresh [class*="-avatar"],
+.visual-refresh [class*="-avatarWrapper"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+/* Fix for bottom panel container sizing */
+.visual-refresh [class*="-panels_"] [class^="container"] {
+  width: 100%;
+  transition: width 0.3s ease;
+  padding: 0 8px;
+}
+.visual-refresh [class*="-panels_"]:hover [class^="container"] {
+  width: 260px; /* Match the increased panel width */
+}
+/* Buttons in bottom panel */
+.visual-refresh [class*="-panels_"] [class^="container__"] [class^="buttons_"] {
+  opacity: 0;
+  transform: scale(0.7);
+  transform-origin: left center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+  padding-left: 8px;
+}
+.visual-refresh [class*="-panels_"]:hover [class^="container__"] [class^="buttons_"] {
+  transform: scale(1);
+  opacity: 1;
+}
+/* Hide resize handle since we're controlling width with CSS */
+.visual-refresh [class*="-sidebarResizeHandle"] {
+  display: none;
+}
+/* Makes Members List background smaller */
+.visual-refresh div[class^="container_c8ffbb"] {
+    max-width: 70px; /* Amount avatars peek +10px */
+}
+
+/* Remove Activity in Members List */
+.visual-refresh div[aria-label*="Members"] > div > div[role="listitem"] {
+    display: none;
+}
+
+/**
+* @name Unblock bottom of server list
+* @description for use with collapsed nameplate
+*/
+.visual-refresh .wrapper_ef3116 {
+    margin-bottom : 0px!important;
 }
