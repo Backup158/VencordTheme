@@ -293,7 +293,7 @@ div[aria-label="Forward"] {
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .visual-refresh [class*="sidebar"]:hover [class*="sidebarList"] {
-    left: 64px;
+    left: 96px;
     opacity: 100%;
     width: 300px; /* Set your preferred width here (resize handle is disabled) */
 }
@@ -307,7 +307,7 @@ div[aria-label="Forward"] {
     transition: width .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .visual-refresh [class*="panels"]:hover {
-    width: 370px;
+    width: 90px;
     z-index: 9999;
     left: 0px;
     backdrop-filter: blur(0.2rem);
