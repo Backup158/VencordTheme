@@ -282,7 +282,7 @@ div[aria-label="Forward"] {
 * @name Collapsible sidebars 
 */
 .visual-refresh [class*="sidebarList"] {
-    position: fixed; /* Remove if you don't want it to float */
+   /* position: fixed; */ /* Remove if you don't want it to float */
     width: 0px; /* Set to 0px if you don't want it to float */
     container-type: unset;
     opacity: 0%;
@@ -293,7 +293,6 @@ div[aria-label="Forward"] {
     transition-property: opacity, left, width;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-    margin-right: 300px;
 }
 /* side bar size/pos upon hover */
 .visual-refresh [class*="sidebar"]:hover [class*="sidebarList"] {
