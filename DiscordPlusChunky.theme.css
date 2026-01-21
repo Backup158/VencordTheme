@@ -299,6 +299,7 @@ div[aria-label="Forward"] {
     left: 72px; /* was 36 */
     opacity: 100%;
     width: 300px; /* Set your preferred width here (resize handle is disabled) */
+    z-index: 1111;
 }
 .visual-refresh [class*="guilds"] {
     z-index: 999; /* So the sidebar pops from behind the servers */
