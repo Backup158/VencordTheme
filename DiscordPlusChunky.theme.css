@@ -288,18 +288,18 @@ div[aria-label="Forward"] {
     opacity: 0%;
     height: 100%;
     z-index: 998;
-    left: -70px;
+    left: -70px; /* where it "starts out" for the transition */
     backdrop-filter: blur(0.2rem);
     transition-property: opacity, left, width;
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-right: 300px;
 }
 /* side bar size/pos upon hover */
 .visual-refresh [class*="sidebar"]:hover [class*="sidebarList"] {
     left: 144px; /* was 36. how far it is from the left once hovered */
     opacity: 100%;
     width: 300px; /* Set your preferred width here (resize handle is disabled) */
-    margin-right: 200px;
 }
 .visual-refresh [class*="guilds"] {
     /* NO MARGIN-RIGHT HERE IT WILL SPREAD THEM ALL OUT LMAO */
