@@ -317,7 +317,7 @@ div[aria-label="Forward"] {
 }
 
 .visual-refresh [class*="guilds"]:hover {
-  left: 40px; /* 0 */
+  left: 0px; /* 0 */
   opacity: 100%;
 }
 
