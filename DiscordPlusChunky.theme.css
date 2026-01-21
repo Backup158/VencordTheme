@@ -299,9 +299,10 @@ div[aria-label="Forward"] {
     left: 144px; /* was 36. how far it is from the left once hovered */
     opacity: 100%;
     width: 300px; /* Set your preferred width here (resize handle is disabled) */
+    margin-right: 200px;
 }
 .visual-refresh [class*="guilds"] {
-    margin-right: 290px;
+    /* NO MARGIN-RIGHT HERE IT WILL SPREAD THEM ALL OUT LMAO */
     z-index: 999; /* So the sidebar pops from behind the servers */
 }
 .visual-refresh [class*="panels"] {
