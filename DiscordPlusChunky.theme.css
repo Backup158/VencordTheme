@@ -278,7 +278,9 @@ div[aria-label="Forward"] {
     margin-bottom : 0px!important;
 }
 
-/* Collapsible sidebars */
+/**
+* @name Collapsible sidebars 
+*/
 .visual-refresh [class*="sidebarList"] {
     position: fixed; /* Remove if you don't want it to float */
     width: 0px; /* Set to 0px if you don't want it to float */
@@ -292,10 +294,11 @@ div[aria-label="Forward"] {
     transition-duration: .5s;
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+/* side bar size/pos upon hover */
 .visual-refresh [class*="sidebar"]:hover [class*="sidebarList"] {
-    left: 36px;
+    left: 72px; /* was 36 */
     opacity: 100%;
-    width: 100px; /* Set your preferred width here (resize handle is disabled) */
+    width: 300px; /* Set your preferred width here (resize handle is disabled) */
 }
 .visual-refresh [class*="guilds"] {
     z-index: 999; /* So the sidebar pops from behind the servers */
