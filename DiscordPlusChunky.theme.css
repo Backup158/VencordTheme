@@ -295,7 +295,7 @@ div[aria-label="Forward"] {
 .visual-refresh [class*="sidebar"]:hover [class*="sidebarList"] {
     left: 36px;
     opacity: 100%;
-    width: 300px; /* Set your preferred width here (resize handle is disabled) */
+    width: 100px; /* Set your preferred width here (resize handle is disabled) */
 }
 .visual-refresh [class*="guilds"] {
     z-index: 999; /* So the sidebar pops from behind the servers */
