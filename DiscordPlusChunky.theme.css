@@ -162,6 +162,7 @@
    * @version 2.0.0
    * @description Make Threads hidden by default and slide down on hover
 */
+/*
 [class*=containerDefault_][data-dnd-name]:hover+[class*=container_]:has([class*=spineBorder_]),
 [class*=containerDefault_][data-dnd-name]+[class*=container_]:has([class*=spineBorder_], li[class*=container_]):hover {
     max-height: max-content;
@@ -173,6 +174,7 @@
     overflow: hidden;
     transition: max-height 0.25s ease;
 }
+*/
 
 /**
  * @name Hide Store and Shop
