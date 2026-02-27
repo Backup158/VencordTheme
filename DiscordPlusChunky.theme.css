@@ -285,7 +285,7 @@ div[aria-label="Forward"] {
 */
 .visual-refresh [class*="sidebarList"] {
     position: fixed;  /* Remove if you don't want it to float */
-    width: 120px; /* Set to 0px if you don't want it to float */
+    width: 60px; /* Set to 0px if you don't want it to float */
     container-type: unset;
     opacity: 0%;
     height: 100%;
