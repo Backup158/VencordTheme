@@ -324,4 +324,91 @@ div[aria-label="Forward"] {
     scale: 0%; /* Because the buttons can't stay inside the panel on chromium (any help is appreciated) */
     transition-property: opacity, margin-bottom, scale;
     transition-duration: .5s;
+}
 
+.visual-refresh [class^="panels_"]:hover [class^="container__"] [class^="buttons__"] {
+ 
+  scale: 100%;
+  opacity: 100%;
+  transition-property: opacity, margin-bottom, scale;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.visual-refresh [class^="sidebarResizeHandle_"] {
+  display: none; /* Set your preferred width in the sidebar settings */
+}
+
+.visual-refresh [class*="container"] [class*="membersWrap"] {
+  position: fixed; /* Remove if you don't want it to float */
+  height: 100%;
+  opacity: 100%;
+  z-index: 999;
+  right: -250px;
+  top: 48px;  /* Add/change this according to your desktop/client */
+  filter: drop-shadow(-16px -16px 16px #0005) ;
+  transition-property: right, opacity;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.visual-refresh [class*="container"] [class*="membersWrap"]:hover {
+    right: 0px;
+    opacity: 100%;
+}
+/*moves chat bar*/
+.channelTextArea_f75fb0, .channelTextArea__74017
+{
+  left: 0px;
+  width: 1820px;
+}
+/*moves scroll bar*/
+.scroller__36d07 {
+    right: 15px;
+}
+/* This is used to hide server names on hover to make collapsible channel list work better */
+.visual-refresh .tooltip__4e35b {
+  display: none;
+}
+.panels_c48ade {
+  height: 58px;
+  width: 58px!important;
+  display: flex!important;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.3s;
+  z-index: 50000;
+  pointer-events: all;
+  border: 1px solid var(--border-subtle)!important;
+  &:has(.container_e131a9) {
+  background-color: var(--notice-background-positive);
+  border: 1px solid var(--border-normal);
+ }
+}
+.wrapper_e131a9 {
+  height: 0;
+  overflow: hidden;
+   transition: height 0.5s;
+}
+.panels_c48ade:hover {
+  width: 100%!important;
+  width: 300px!important;
+  height: auto!important;
+  .wrapper_e131a9 {
+    height: auto!important;
+  }
+}
+.sidebar_c48ade {
+  overflow: visible!important;
+}
+.container__2637a {
+  padding-bottom: 0px!important;
+}
+.scroller__99e7c {
+  margin-bottom: 0px!important;
+}
+.bottom__7aaec {
+  bottom: 0px!important;
+}
+body{
+  font-weight:medium !important;
+}
