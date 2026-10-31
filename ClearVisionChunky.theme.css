@@ -1,0 +1,364 @@
+/**
+ * @name ClearVision V7 for Vencord
+ * @author ClearVision Team
+ * @version 7.0.1
+ * @description Highly customizable theme for Vencord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/**
+* @name Bartender
+* @author aushevahmad, ge.b
+* @description Hide Discord's toolbar icons until you need them. 
+* @source https://github.com/AushevAhmad/awesome-css
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+:root {
+    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
+}
+/**
+* @name Custom Bar Prompt
+* @author aushevahmad
+* @description Change message input prompt text
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
+:root {
+    --prompt-text: "be silly :3";
+}
+/**
+* @name MemberCount Adjustment
+* @author aushevahmad
+* @description Makes the MemberCount plugin display in x/y instead of x ... y ...
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
+/**
+* @name Compact Channel Tweaks
+* @author aushevahmad
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/channeltweaks.css");
+/**
+* @name Hide Nitro Upsell
+* @author tom
+*/
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
+:root {
+    /* do you want to see your quests/billing/nitro settings? */
+    /* yes, I want to see it -> --billing: block !important; */
+    /* no, hide it -> --billing: none; */
+    --billing: none;
+    /* do you want to see server boosting/server shop upsell? */
+    /* yes, I want to see it -> --boosting: block !important; */
+    /* no, hide it -> --boosting: none; */
+    --boosting: none;
+}
+/**
+* @name Alt Text Improvements
+* @author Saltssaumure
+*/
+@import url("https://minidiscordthemes.github.io/Snippets/AltTextImprovements/main.css");
+/**
+* @name Hidden Threads until Hover
+* @author lulu
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/hiddenthreads.css");
+@import url("https://aushevahmad.github.io/awesome-css/modules/compressbotmsgs.css");
+/**
+* @name NSFW recolor
+* @author krystalskullofficial
+* @version 4.0
+* @description recolors the icon for 'NFSW' channels so they are easier to see/notice
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWChannelRecolor.css");
+/**
+* @name ShowBothUser&Status
+* @author  krystalskullofficial
+* @version 6.0
+* @description Show both your status and username at the same time
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css");
+/**
+ * @name hidePinDiscovery
+ * @author krystalskullofficial
+ * @version 2.0
+ * @description Hides the new pinned Discovery Icon
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/hideGlobalDiscovery.css");
+/**
+ * @name SyncedWithGameRecolor
+ * @author KrstlSkll69
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
+/**
+ * @name Chat Alerts at Top
+*/
+@import url("https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/ChatRelatedAlertsAtTop.theme.css");
+/**
+ * @name Radial Status (Instead of Dot)
+*/
+@import url("https://raw.githubusercontent.com/Just-Me-22/discord-themes/main/circular-status.css");
+/**
+ * @name Compact Server Info
+*/
+@import url("https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css");
+/**
+ * @name Context Menu Icons
+*/
+@import url("https://davart154.github.io/Themes/Snippets/Context%20Icons/ContextIconsSource.css");
+/**
+ * @name More Informative Edited Tag
+*/
+@import url('https://codeberg.org/flak/css1/raw/branch/main/vcSnippets/prettifiedAndExpandedEditedMessageTimestamp.css');
+/**
+ * @name Discord Adblock
+*/
+@import url("https://codeberg.org/ridge/Discord-Adblock/raw/branch/pages/discord-adblock.css");
+
+/*******************************
+* THEME
+*******************************/
+/* SETTINGS */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #f083c4; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #B452BF; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #85d576; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #D77171; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: #85d576; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #E1BB40; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
+  --background-image: url("https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/Backup158-cyan/Assets/Theme/Wallpapers/Coffin_of_Andy_and_Leyley_Skull.png"); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size (px) [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1)); /* app background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: saturate(calc(var(--saturation-factor, 1) * 1))] */
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size (px) [default: var(--background-size)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size (px) [default: var(--background-size)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* HOME ICON */
+  --home-icon: url("https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/Backup158-cyan/Assets/Theme/Icons/Lord_Unknown.png"); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-size: cover; /* home button icon size (px) [default:cover] */
+  /* FONTS */
+  --main-font: "gg sans", "Faustina", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
+  --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected-bg: var(--hover-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
+}
+
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
+  --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
+
+/******************************
+* CODE SNIPPETS
+******************************/
+/**
+   * @name Hidden Threads
+   * @author vortex_chaos, catpurrrchino
+   * @version 2.0.0
+   * @description Make Threads hidden by default and slide down on hover
+*/
+/*
+[class*=containerDefault_][data-dnd-name]:hover+[class*=container_]:has([class*=spineBorder_]),
+[class*=containerDefault_][data-dnd-name]+[class*=container_]:has([class*=spineBorder_], li[class*=container_]):hover {
+    max-height: max-content;
+    transition: max-height 1s ease;
+}
+
+[class*=containerDefault_][data-dnd-name]+[class*=container_]:has([class*=spineBorder_], li[class*=container_]) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+*/
+
+/**
+ * @name Hide Store and Shop
+ * @description Hides buttons in chat bar
+*/
+/* Store */
+[href="/store"],
+[href="/shop"] {
+    display: none !important;
+}
+
+/* Nitro Gift */
+[aria-label="Send a gift"],
+.container_c0c49a {
+    display: none !important;
+}
+
+/* GIF */
+[aria-label="Open GIF picker"] {
+    display: none !important;
+}
+
+/* Stickers */
+[aria-label="Open sticker picker"] {
+    display: none !important;
+}
+
+/* Apps Button */
+.app-launcher-entrypoint {
+    display: none !important;
+}
+
+/**
+ * @name Hide Forward Button 
+ * @description Hides forward button from appearing when hovering a message
+*/
+#message-actions-forward {
+    display: none;
+}
+div[aria-label="Forward"] {
+    display: none;
+}
+
+/**
+ * @name Hide Nitro Ad in Profile
+ * @author i am me
+*/
+[class^=wrapper_][class*=fullSize_]>button,
+[data-list-id^=profile-]>[class]:not([data-list-item-id$=_edit-profile]) {
+  display: none;
+}
+
+/**
+ * @name Favorites Reverter
+ * @author charmfvlz
+ * @description removes bg color and moves star back to the left
+*/
+[class*='gifFavoriteButton_'] {
+    background-color: transparent;
+}
+[class*='result_'] [class*='favButton'] {
+    right: unset;
+}
+
+/**
+ * @name Red/Blue Pill      
+ * @author bitslayn
+ * @description Makes channel have a slight color matching the notification type (ping/new forum post)
+*/
+[class*="-iconVisibility_"]:has([class^="mentionsBadge_"]) > [class^="unread"] {
+  background-color: var(--status-danger);
+}
+[class*="-iconVisibility_"]:has([style="color: var(--text-brand);"]) > [class^="unread"] {
+  background-color: var(--text-brand);
+}
+
+/**
+ * @name Pin Search Page Selector
+ * @author suffocate
+ * @description Pin the page select to the bottom of search results
+*/
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 0px;
+  z-index: 999;
+  background: var(--bg-overlay-1, var(--background-secondary));
+}
+
+/**
+ * @name: Show Reactors on Hover Only
+ * @author: mnem
+*/
+[class^=reactionInner] {
+    > :last-child:not([class^=reactionCount]) {
+        margin-left: 0 !important;
+        display: none;
+    }
+
+    &:hover {
+        padding-right: 0; /* optional to remove "excess" padding */
+
+        > :last-child { display: inline }
+    }
+
+    &:has(>:last-child:is([class^=reactionCount])) {
+        /* Red BG if not loaded yet (optional) */
+        background-color: #ff000012;
+
+        &, &:hover {
+            padding-right: 0.37em;
+        }
+    }
+}
+
+/**
+ * @name Fully Censor Account Info
+ * @author: so interested
+*/
+.container__75920[data-nav-anchor-key='account_info_email_setting'],
+.container__75920[data-nav-anchor-key='account_info_phone_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {-webkit-text-security: disc;}
+}
