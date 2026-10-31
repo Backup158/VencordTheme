@@ -263,3 +263,28 @@ div[aria-label="Forward"] {
   background: var(--bg-overlay-1, var(--background-secondary));
 }
 
+/**
+ * @name: Show Reactors on Hover Only
+ * @author: mnem
+*/
+[class^=reactionInner] {
+    > :last-child:not([class^=reactionCount]) {
+        margin-left: 0 !important;
+        display: none;
+    }
+
+    &:hover {
+        padding-right: 0; /* optional to remove "excess" padding */
+
+        > :last-child { display: inline }
+    }
+
+    &:has(>:last-child:is([class^=reactionCount])) {
+        /* Red BG if not loaded yet (optional) */
+        background-color: #ff000012;
+
+        &, &:hover {
+            padding-right: 0.37em;
+        }
+    }
+}
