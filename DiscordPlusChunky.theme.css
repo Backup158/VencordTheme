@@ -252,15 +252,6 @@ div[aria-label="Forward"] {
 }
 
 /**
- * @name Hide Muted and Ignored Users
- * @author hahalosahalt
- * @description Hides direct messages from muted users
-*/
-[class*=dm_]:has([class*=muted_]) {
-    display: none;
-}
-
-/**
  * @name Pin Search Page Selector
  * @author suffocate
  * @description Pin the page select to the bottom of search results
