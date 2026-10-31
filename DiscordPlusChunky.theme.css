@@ -198,33 +198,33 @@
 
 /**
  * @name Hide Store and Shop
- * @description Hides buttons for Store and Shop
+ * @description Hides buttons in chat bar
 */
-[href="/store"], 
-[href='/shop']
-{
-  display: none;
+/* Store */
+[href="/store"],
+[href="/shop"] {
+    display: none !important;
 }
 
-/**
- * @name Hide Nitro Gift Button 
-*/
-.buttons__74017>[aria-label="Send a gift"]{
-  display: none;
+/* Nitro Gift */
+[aria-label="Send a gift"],
+.container_c0c49a {
+    display: none !important;
 }
 
-/**
- * @name Hide Sticker Picker Button 
-*/
-button[aria-label="Open sticker picker"] {
-  display: none;
+/* GIF */
+[aria-label="Open GIF picker"] {
+    display: none !important;
 }
 
-/**
- * @name Hide App Launcher
-*/
-[class*=channelAppLauncher_] {
-  display: none !important;
+/* Stickers */
+[aria-label="Open sticker picker"] {
+    display: none !important;
+}
+
+/* Apps Button */
+.app-launcher-entrypoint {
+    display: none !important;
 }
 
 /**
