@@ -1,21 +1,41 @@
-/*******************************
-* IMPORTS
-*******************************/
 /**
- * @name Discord+
- * @author PlusInsta
- * @authorId 309931975102300160
- * @authorLink https://plusinsta.xyz
- * @version 3.2.1
- * @description A sleek, customizable Discord theme.
- * @donate https://ko-fi.com/plusinsta
- * @website https://plusinsta.github.io/discord-plus
- * @source https://github.com/PlusInsta/discord-plus
- * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
- * @invite 2Jwh2nS
- * I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server.
+ * @name ClearVision V7 for Vencord
+ * @author ClearVision Team
+ * @version 7.0.1
+ * @description Highly customizable theme for Vencord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+/* IMPORT CSS */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/**
+* @name Bartender
+* @author aushevahmad, ge.b
+* @description Hide Discord's toolbar icons until you need them. 
+* @version 1.0
+* @source https://github.com/AushevAhmad/awesome-css
 */
-@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
+@import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
+:root {
+    --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
+}
+/**
+* @name NSFW recolor
+* @author krystalskullofficial
+* @version 4.0
+* @description recolors the icon for 'NFSW' channels so they are easier to see/notice
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/NSFWChannelRecolor.css");
+/**
+* @name ShowBothUser&Status
+* @author  krystalskullofficial
+* @version 6.0
+* @description Show both your status and username at the same time
+*/
+@import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/OtherStuff/ViewBoth.css");
 /**
  * @name hidePinDiscovery
  * @author krystalskullofficial
@@ -29,11 +49,6 @@
 */
 @import url("https://raw.githubusercontent.com/KrstlSkll69/vc-snippets/main/SyncedWithGameRecolor.css");
 /**
- * @name Seamless Chat Bar (Visual Refresh)
- * @author nspc911
-*/
-@import url(https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/RefreshedSeamlessChatBar.theme.css);
-/**
  * @name Chat Alerts at Top
 */
 @import url(https://raw.githubusercontent.com/NSPC911/themes/refs/heads/main/vencord/ChatRelatedAlertsAtTop.theme.css);
@@ -41,83 +56,125 @@
 /*******************************
 * THEME
 *******************************/
-.theme-dark {
-/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
-   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
-  /* --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png); 
-    Needs to be a direct image link
-    Yen BellatrixAiden
-      https://imgur.com/gallery/iEjhLP1 --> https://imgur.com/a/t5CWsbL --> https://i.imgur.com/dTd5kDU.jpg
-        https://i.imgur.com/HK2Rl7v.jpg
-        https://i.imgur.com/c20G3X4.jpg
-        https://i.imgur.com/8VOTvmQ.jpg
-        https://i.imgur.com/mD1LX42.
-	*/
-  --dplus-backdrop: url(https://i.imgur.com/XsCyikP.png);
-
-  /* accent color is used for things like buttons */
-  --dplus-accent-color-hue: 320; /* hue in HSL */
-  --dplus-accent-color-saturation: 60%; /* saturation in HSL */
-  --dplus-accent-color-lightness: 31%; /* lightness in HSL */
-
-  /* foreground color affects icons, text, and many other things in the UI */
-  --dplus-foreground-color-hue-base: 210; /* based on vanilla --text-normal hue */
-  --dplus-foreground-color-hue-links: 197;
-  --dplus-foreground-color-saturation-amount: 1; /* offset, where 1 is normal strength and 0.5 is -50 percentile, can go above 1 at risk of clipping */
-  --dplus-foreground-color-lightness-amount: 1; /* ditto, 1 is normal and 0.5 is -50 percentile, can go above 1 at risk of clipping */
-
-  /* background color affects the squares that darken the backdrop */
-  --dplus-background-color-hue: 320;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 1;
-  --dplus-background-color-alpha: 0.6; /* how opaque the backgrounds should be, where 1 is fully opaque and 0 is fully transparent. not recommended to set to 0 unless background is very dark or black */
-  /* see help documentation on what will work with this variable: */
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Righteous&family=Kosugi&family=RocknRoll+One&family=Gothic+A1&family=Black+Han+Sans&family=PT+Sans+Caption&family=Russo+One&family=Palanquin+Dark&family=Raleway:wght@500&family=Commissioner&family=Alegreya+Sans:wght@700&family=Mitr&family=Lalezar&display=swap');
+/* SETTINGS */
 :root {
-  /* Fonts */
-  /* You can use any installed font on your device. */
-  --dplus-font-ui: 'Poppins';
-  --dplus-font-body: 'Roboto';
-  /* --dplus-font-header: 'Righteous'; */
-  --dplus-font-header: 'Dancing Script';
-
-  --font-display: var(--dplus-font-ui), 'Poppins', 'Helvetica Neue', 'system-ui', 'Tahoma', 'Segoe UI', 'Helvetica', 'Whitney', sans-serif !important;
-  --font-primary: var(--font-display);
-
-  /* Round corner sizes, measured in pixel radius.
-    Set avatar/server radius to 50% to make them circular.
-    UI radius must be in pixels, otherwise things break. */
-  --dplus-radius-ui: 10px;
-  --dplus-radius-avatar: 50%;
-  --dplus-radius-server: 50%;
-
-  /* This decides how much breathing room there should be between things like buttons and content. */
-  --dplus-spacing-ui: 10px;
-
-  /* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
-  --dplus-spacing-app: 10px;
-
-  /* Size of user and server icons */
-  --dplus-icon-avatar-chat: 64px;
-  --dplus-icon-avatar-list: 32px;
-  --dplus-icon-avatar-profile: 80px;
-
-  --dplus-icon-server-sidebar: 48px;
-  --dplus-icon-server-list: 32px;
-
-  /* The Home icon on the top left */
-  /* --dplus-icon-home-dark: url(https://plusinsta.github.io/discord-plus/assets/discord/home_dark.svg); */
-  --dplus-icon-home-dark: url(https://i.imgur.com/4BB1lFP.jpg);	
-
-  /* change padding of the bar */
-  --rscb-chat-box-padding: 8px; /* default is 8px for alignment */
+  /* ACCENT COLORS */
+  --main-color: #f083c4; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #B452BF; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #85d576; /* positive accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #D77171; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  /* STATUS COLORS */
+  --online-color: #85d576; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #E1BB40; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+  /* APP BACKGROUND */
+  --background-shading-percent: 100%; /* app background shading amount (0 for complete smoothness) [default: 100%] */
+  --background-image: url("https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/Backup158-cyan/Assets/Theme/Wallpapers/Coffin_of_Andy_and_Leyley_Skull.png"); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size (px) [default: cover] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-filter: saturate(calc(var(--saturation-factor, 1) * 1)); /* app background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: saturate(calc(var(--saturation-factor, 1) * 1))] */
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: var(--background-image); /* user popout background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-popout-position: var(--background-position); /* user popout position [default: var(--background-position)] */
+  --user-popout-size: var(--background-size); /* user popout size (px) [default: var(--background-size)] */
+  --user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-filter: var(--background-filter); /* user popout background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: var(--background-image); /* user modal background image (link must be HTTPS) (not applied to nitro users) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal size (px) [default: var(--background-size)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-filter: var(--background-filter); /* user modal background adjustments (ex: blur, saturation, brightness) (more info: https://developer.mozilla.org/en-US/docs/Web/CSS/filter) [default: var(--background-filter);] */
+  /* HOME ICON */
+  --home-icon: url("https://raw.githubusercontent.com/Backup158/VencordTheme/refs/heads/Backup158-cyan/Assets/Theme/Icons/Lord_Unknown.png"); /* home button icon (link must be HTTPS) [default: url(https://clearvision.github.io/icons/discord.svg)]*/
+  --home-size: cover; /* home button icon size (px) [default:cover] */
+  /* FONTS */
+  --main-font: "gg sans", "Faustina", Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: gg sans, Helvetica Neue, Helvetica, Arial, sans-serif] */
+  --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+  /* CHANNEL COLORS */
+  --channel-normal: var(--interactive-text-default); /* channel text color [default: var(--interactive-text-default)] */
+  --channel-muted: var(--interactive-muted); /* muted channel text color [default: var(--interactive-muted)] */
+  --channel-hover: var(--interactive-text-hover); /* hovered channel text color [default: var(--interactive-text-hover)] */
+  --channel-selected: var(--interactive-text-active); /* selected channel text color [default: var(--interactive-text-active)] */
+  --channel-selected-bg: var(--hover-color); /* selected channel background [default: var(--main-color)] */
+  --channel-unread: var(--main-color); /* unread channel text color [default: var(--main-color)] */
+  --channel-unread-hover: var(--hover-color); /* unread channel hover color [default: var(--hover-color)] */
+  /* ACCESSIBILITY */
+  --focus-color: var(--main-color); /* outline when pressing TAB key [default: var(--main-color)] */
 }
+
+/* THEME SPECIFIC SHADING */
+/* LIGHT THEME */
+:is(.theme-light, .theme-dark .theme-light) {
+  --background-shading: rgba(252, 252, 252, 0.3); /* app background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --card-shading: rgba(252, 252, 252, 0.3); /* cards background shading color [default: rgba(252, 252, 252, 0.3)] */
+  --popout-shading: rgba(252, 252, 252, 0.7); /* popouts background shading color [default: rgba(252, 252, 252, 0.7)] */
+  --modal-shading: rgba(252, 252, 252, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(0, 0, 0, 0.3); /* inputs background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --normal-text: #36363c; /* text color [default: #36363c] */
+  --muted-text: #75757e; /* muted text color [default: #75757e] */
+}
+
+/* ASH THEME */
+:is(.theme-dark, .theme-light .theme-dark) {
+  --background-shading: rgba(0, 0, 0, 0.4); /* app background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --card-shading: rgba(0, 0, 0, 0.2); /* cards background shading color [default: rgba(0, 0, 0, 0.2)] */
+  --popout-shading: rgba(0, 0, 0, 0.6); /* popouts background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --modal-shading: rgba(0, 0, 0, 0.4); /* modals background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #d8d8db; /* text color [default: #d8d8db] */
+  --muted-text: #aeaeb4; /* muted text color [default: #aeaeb4] */
+}
+
+/* DARK THEME */
+:is(.theme-darker, .theme-light .theme-darker) {
+  --background-shading: rgba(0, 0, 0, 0.6); /* app background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --card-shading: rgba(0, 0, 0, 0.3); /* cards background shading color [default: rgba(0, 0, 0, 0.3)] */
+  --popout-shading: rgba(0, 0, 0, 0.7); /* popouts background shading color [default: rgba(0, 0, 0, 0.7)] */
+  --modal-shading: rgba(0, 0, 0, 0.5); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #fbfbfb; /* text color [default: #fbfbfb] */
+  --muted-text: #94949c; /* muted text color [default: #94949c] */
+}
+
+/* ONYX THEME */
+:is(.theme-midnight, .theme-light .theme-midnight) {
+  --background-shading: rgba(0, 0, 0, 0.8); /* app background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --card-shading: rgba(0, 0, 0, 0.4); /* cards background shading color [default: rgba(0, 0, 0, 0.4)] */
+  --popout-shading: rgba(0, 0, 0, 0.8); /* popouts background shading color [default: rgba(0, 0, 0, 0.8)] */
+  --modal-shading: rgba(0, 0, 0, 0.6); /* modals background shading color [default: rgba(0, 0, 0, 0.6)] */
+  --input-shading: rgba(255, 255, 255, 0.05); /* inputs background shading color [default: rgba(255, 255, 255, 0.05)] */
+  --normal-text: #dcdcde; /* text color [default: #dcdcde] */
+  --muted-text: #86868e; /* muted text color [default: #86868e] */
+}
+
+/* ADD ADDITIONAL CSS BELOW HERE */
 
 /******************************
 * CODE SNIPPETS
 ******************************/
+/**
+   * @name Hidden Threads
+   * @author vortex_chaos, catpurrrchino
+   * @version 2.0.0
+   * @description Make Threads hidden by default and slide down on hover
+*/
+/*
+[class*=containerDefault_][data-dnd-name]:hover+[class*=container_]:has([class*=spineBorder_]),
+[class*=containerDefault_][data-dnd-name]+[class*=container_]:has([class*=spineBorder_], li[class*=container_]):hover {
+    max-height: max-content;
+    transition: max-height 1s ease;
+}
+
+[class*=containerDefault_][data-dnd-name]+[class*=container_]:has([class*=spineBorder_], li[class*=container_]) {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+*/
 
 /**
  * @name Hide Store and Shop
@@ -132,7 +189,7 @@
 /**
  * @name Hide Nitro Gift Button 
 */
-button[aria-label="Send a gift"] {
+.buttons__74017>[aria-label="Send a gift"]{
   display: none;
 }
 
@@ -215,142 +272,3 @@ div[aria-label="Forward"] {
   background: var(--bg-overlay-1, var(--background-secondary));
 }
 
-/**
- * @name Collapsible-on-hover Sidebars (Visual Refresh)
- * @author lu9
- * @additional-authors minebabble
- * @description Made with default UI density in mind
-*/
-/* Collapsible sidebars - Optimized for speed */
-/* Left sidebar - fixed with hover bridge */
-.visual-refresh [class*="-sidebarList"] {
-  position: fixed;
-  width: 150px;
-  container-type: unset;
-  opacity: 0;
-  height: 100%;
-  z-index: 998;
-  left: -70px;
-  filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.15));
-  transition: opacity 0.3s ease, left 0.3s ease, width 0.3s ease;
-  will-change: opacity, left, width;
-}
-/* Server list (guild list) positioning */
-.visual-refresh [class*="guilds"] {
-  z-index: 999;
-  position: relative;
-}
-.visual-refresh [class*="-sidebar_"]:hover [class^="sidebarList"] {
-  left: 160px;	/* 70px --> 160px to go past Better Folders */
-  opacity: 1;
-  width: 240px;
-}
-/* Right member list that works in all window sizes */
-.visual-refresh [class*="-container_"] [class^="membersWrap"] {
-  position: absolute;
-  height: 100vh;
-  opacity: 1;
-  z-index: 999;
-  right: -180px; /* -240px --> -180px to let the avatars peek */
-  top: 0;
-  filter: drop-shadow(-5px 0 8px rgba(0, 0, 0, 0.15));
-  transition: right 0.3s ease;
-  background: var(--background-secondary);
-  max-width: 240px;
-  will-change: right;
-}
-.visual-refresh [class*="-container_"] [class^="membersWrap"]:hover,
-.visual-refresh [class*="-container_"] [class^="membersWrap"]:focus-within {
-  right: 0;
-  opacity: 1;
-}
-/* Hover detection area for right member list */
-.visual-refresh [class*="-container_"] [class^="membersWrap"]::before {
-  content: "";
-  position: absolute;
-  width: 10px; /* Hover detection is here */
-  height: 100%;
-  right: 100%;
-  top: 0;
-}
-/* Bottom panel with nameplate fix - IMPROVED */
-.visual-refresh [class*="-panels"] {
-  position: fixed;
-  width: 58px;
-  bottom: 20;
-  left: 31;
-  z-index: 999;
-  transition: width 0.3s ease;
-  background: var(--background-primary);
-  will-change: width;
-}
-.visual-refresh [class*="-panels"]:hover {
-  width: 260px; /* Increased width for more space */
-  z-index: 1000;
-}
-/* Improved nameplate layout and spacing */
-.visual-refresh [class*="-nameTag"],
-.visual-refresh [class*="-userInfo"] {
-  position: relative;
-  text-align: left;
-  width: auto;
-  padding-right: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: all 0.3s ease;
-}
-/* Ensure username text has proper spacing */
-.visual-refresh [class*="-panels_"] [class^="username"] {
-  margin-left: 8px;
-  padding-right: 5px;
-}
-/* Avatar alignment in nameplate */
-.visual-refresh [class*="-avatar"],
-.visual-refresh [class*="-avatarWrapper"] {
-  margin-right: 8px;
-  vertical-align: middle;
-}
-/* Fix for bottom panel container sizing */
-.visual-refresh [class*="-panels_"] [class^="container"] {
-  width: 100%;
-  transition: width 0.3s ease;
-  padding: 0 8px;
-}
-.visual-refresh [class*="-panels_"]:hover [class^="container"] {
-  width: 260px; /* Match the increased panel width */
-}
-/* Buttons in bottom panel */
-.visual-refresh [class*="-panels_"] [class^="container__"] [class^="buttons_"] {
-  opacity: 0;
-  transform: scale(0.7);
-  transform-origin: left center;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  will-change: opacity, transform;
-  padding-left: 8px;
-}
-.visual-refresh [class*="-panels_"]:hover [class^="container__"] [class^="buttons_"] {
-  transform: scale(1);
-  opacity: 1;
-}
-/* Hide resize handle since we're controlling width with CSS */
-.visual-refresh [class*="-sidebarResizeHandle"] {
-  display: none;
-}
-/* Makes Members List background smaller */
-.visual-refresh div[class^="container_c8ffbb"] {
-    max-width: 70px; /* Amount avatars peek +10px */
-}
-
-/* Remove Activity in Members List */
-.visual-refresh div[aria-label*="Members"] > div > div[role="listitem"] {
-    display: none;
-}
-
-/**
-* @name Unblock bottom of server list
-* @description for use with collapsed nameplate
-*/
-.visual-refresh .wrapper_ef3116 {
-    margin-bottom : 0px!important;
-}
