@@ -56,6 +56,22 @@
  * @name Radial Status (Instead of Dot)
 */
 @import url("https://raw.githubusercontent.com/Just-Me-22/discord-themes/main/circular-status.css");
+/**
+ * @name Compact Server Info
+*/
+@import url("https://raw.githubusercontent.com/Just-Me-22/Compact-Server-Shortcut-Buttons/main/compact-server-shortcuts.css");
+/**
+ * @name Context Menu Icons
+*/
+@import url("https://davart154.github.io/Themes/Snippets/Context%20Icons/ContextIconsSource.css");
+/**
+ * @name More Informative Edited Tag
+*/
+@import url('https://codeberg.org/flak/css1/raw/branch/main/vcSnippets/prettifiedAndExpandedEditedMessageTimestamp.css');
+/**
+ * @name Discord Adblock
+*/
+@import ulr("https://codeberg.org/ridge/Discord-Adblock/raw/branch/pages/discord-adblock.css");
 
 /*******************************
 * THEME
@@ -291,4 +307,13 @@ div[aria-label="Forward"] {
             padding-right: 0.37em;
         }
     }
+}
+
+/**
+ * @name Fully Censor Account Info
+ * @author: so interested
+*/
+.container__75920[data-nav-anchor-key='account_info_email_setting'],
+.container__75920[data-nav-anchor-key='account_info_phone_setting'] {
+  .stack_dbd263>.text-md\/medium_cf4812 {-webkit-text-security: disc;}
 }
