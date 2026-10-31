@@ -15,13 +15,58 @@
 * @name Bartender
 * @author aushevahmad, ge.b
 * @description Hide Discord's toolbar icons until you need them. 
-* @version 1.0
 * @source https://github.com/AushevAhmad/awesome-css
 */
 @import url("https://aushevahmad.github.io/awesome-css/modules/bartender.css");
 :root {
     --bartender-width: 4ch;  /* Width for displayed icon. Adjust depending on your needs [Default: 4ch] */
 }
+/**
+* @name Custom Bar Prompt
+* @author aushevahmad
+* @description Change message input prompt text
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/custom-bar-prompt.css");
+:root {
+    --prompt-text: "be silly :3";
+}
+/**
+* @name MemberCount Adjustment
+* @author aushevahmad
+* @description Makes the MemberCount plugin display in x/y instead of x ... y ...
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/vc-membercount.css");
+/**
+* @name Compact Channel Tweaks
+* @author aushevahmad
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/channeltweaks.css");
+/**
+* @name Hide Nitro Upsell
+* @author tom
+*/
+@import url("https://raw.githubusercontent.com/tom22k/discord-css/main/Themes/HideNitroUpsellV2.css");
+:root {
+    /* do you want to see your quests/billing/nitro settings? */
+    /* yes, I want to see it -> --billing: block !important; */
+    /* no, hide it -> --billing: none; */
+    --billing: none;
+    /* do you want to see server boosting/server shop upsell? */
+    /* yes, I want to see it -> --boosting: block !important; */
+    /* no, hide it -> --boosting: none; */
+    --boosting: none;
+}
+/**
+* @name Alt Text Improvements
+* @author Saltssaumure
+*/
+@import url("https://minidiscordthemes.github.io/Snippets/AltTextImprovements/main.css");
+/**
+* @name Hidden Threads until Hover
+* @author lulu
+*/
+@import url("https://aushevahmad.github.io/awesome-css/modules/hiddenthreads.css");
+@import url("https://aushevahmad.github.io/awesome-css/modules/compressbotmsgs.css");
 /**
 * @name NSFW recolor
 * @author krystalskullofficial
