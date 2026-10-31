@@ -71,7 +71,7 @@
 /**
  * @name Discord Adblock
 */
-@import ulr("https://codeberg.org/ridge/Discord-Adblock/raw/branch/pages/discord-adblock.css");
+@import url("https://codeberg.org/ridge/Discord-Adblock/raw/branch/pages/discord-adblock.css");
 
 /*******************************
 * THEME
